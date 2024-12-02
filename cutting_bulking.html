@@ -1,23 +1,32 @@
 <!DOCTYPE html>
+<!-- DEVELOPER: Elliot Cecere, IS117-005, Fall 2024 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Guru - Cutting/Bulking</title>
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fitness Guru</a>
+        <a class="navbar-brand" href="index.html">Fitness Guru</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="workout_splits.html">Workout Splits</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="workout_splits.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Workout Splits
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="workout_splits.html#upper-lower">Upper/Lower Split</a>
+                        <a class="dropdown-item" href="workout_splits.html#push-pull-legs">Push/Pull/Legs</a>
+                        <a class="dropdown-item" href="workout_splits.html#full-body">Full Body Workout</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="nutrition_advice.html">Nutrition Advice</a></li>
                 <li class="nav-item active"><a class="nav-link" href="cutting_bulking.html">Cutting/Bulking</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -29,7 +38,7 @@
         <h1 class="text-center">Cutting and Bulking</h1>
         <p class="lead text-center">Understand the principles of cutting and bulking to achieve your fitness goals effectively.</p>
 
-        <div class="card mb-4">
+        <div class="card mb-4" id="caloric-deficit-surplus">
             <div class="card-header">
                 Caloric Deficit/Surplus
             </div>
@@ -43,7 +52,7 @@
             </div>
         </div>
 
-        <div class="card mb-4">
+        <div class="card mb-4" id="fat-loss-muscle-gain">
             <div class="card-header">
                 Fat Loss/Muscle Gain
             </div>
@@ -59,7 +68,7 @@
     </div>
 
     <footer class="footer bg-light text-center py-3">
-        <p>&copy; 2024 Fitness Guru. All rights reserved. | <a href="terms_privacy.html">Terms of Use</a> | <a href="terms_privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2024 Fitness Guru. All rights reserved. | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
