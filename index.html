@@ -10,17 +10,26 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fitness Guru</a>
+        <a class="navbar-brand" href="index.html">Fitness Guru</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Workout Splits</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Nutrition Advice</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cutting/Bulking</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="workout_splits.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Workout Splits
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="workout_splits.html#upper-lower">Upper/Lower Split</a>
+                        <a class="dropdown-item" href="workout_splits.html#push-pull-legs">Push/Pull/Legs</a>
+                        <a class="dropdown-item" href="workout_splits.html#full-body">Full Body Workout</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="nutrition_advice.html">Nutrition Advice</a></li>
+                <li class="nav-item"><a class="nav-link" href="cutting_bulking.html">Cutting/Bulking</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +38,7 @@
         <div class="jumbotron text-center">
             <h1 class="display-4">Welcome to Fitness Guru</h1>
             <p class="lead">Your go-to source for reliable fitness information.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+            <a class="btn btn-primary btn-lg" href="workout_splits.html" role="button">Get Started</a>
         </div>
 
         <div class="row">
@@ -39,7 +48,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Upper/Lower Split</h5>
                         <p class="card-text">Learn about the Upper/Lower workout split and find sample routines.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="workout_splits.html#upper-lower" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +58,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Push/Pull/Legs</h5>
                         <p class="card-text">Explore the Push/Pull/Legs split with pros, cons, and routines.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="workout_splits.html#push-pull-legs" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +68,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Full Body Workout</h5>
                         <p class="card-text">Discover the Full Body Workout split and find effective routines.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="workout_splits.html#full-body" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
