@@ -10,14 +10,23 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fitness Guru</a>
+        <a class="navbar-brand" href="index.html">Fitness Guru</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="workout_splits.html">Workout Splits</a></li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Workout Splits
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="workout_splits.html#upper-lower">Upper/Lower Split</a>
+                        <a class="dropdown-item" href="workout_splits.html#push-pull-legs">Push/Pull/Legs</a>
+                        <a class="dropdown-item" href="workout_splits.html#full-body">Full Body Workout</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="nutrition_advice.html">Nutrition Advice</a></li>
                 <li class="nav-item"><a class="nav-link" href="cutting_bulking.html">Cutting/Bulking</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
