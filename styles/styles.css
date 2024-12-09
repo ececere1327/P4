@@ -37,13 +37,7 @@ body {
     border: 4px dashed blue;
     border-radius: 15px;
     padding: 15px;
-    background: repeating-linear-gradient(
-        -45deg,
-        white,
-        white 10px,
-        blue 10px,
-        blue 20px
-    );
+    background-color: white;
     background-clip: padding-box;
 }
 
