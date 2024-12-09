@@ -31,34 +31,29 @@ body {
 
 .card {
     margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+    position: relative;
+    border: 4px dashed blue;
+    border-radius: 15px;
+    padding: 15px;
+    background: repeating-linear-gradient(
+        -45deg,
+        white,
+        white 10px,
+        blue 10px,
+        blue 20px
+    );
+    background-clip: padding-box;
 }
 
 .card-body {
     padding: 15px;
 }
 
-.card-title {
-    font-size: 1.25rem;
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.card-text {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.card .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px dashed blue;
+    border-radius: 15px 15px 0 0;
 }
 
 .footer {
@@ -69,13 +64,13 @@ body {
 
 .footer p {
     margin: 0;
-    color: #000000;
+    color: black;
 }
 
 .footer a {
-    color: #cce7ff;
+    color: black;
 }
 
 .footer a:hover {
-    color: #000080;
+    color: #cce7ff;
 }
