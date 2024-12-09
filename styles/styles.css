@@ -46,9 +46,13 @@ body {
 
 .card-img-top {
     height: 200px;
+    width: 250px;
     object-fit: cover;
     border-bottom: 4px dashed blue;
     border-radius: 15px 15px 0 0;
+    dislpay: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
@@ -69,3 +73,4 @@ body {
 .footer a:hover {
     color: #cce7ff;
 }
+
